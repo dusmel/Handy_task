@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dusmel.handy_services.HandymanDesc">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E5E7E9"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:id="@+id/header"
+            android:background="#F0B27A"/>
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            android:onClick="adminDescBack"
+            android:background="#F0B27A"
+            android:layout_margin="7dp"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/profle"
+            android:id="@+id/descrHandyPfl"
+            android:layout_marginTop="80dp"
+            android:layout_centerHorizontal="true"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/descrHandyNames"
+            android:text="Full name"
+            android:textSize="20dp"
+            android:layout_below="@id/descrHandyPfl"
+            android:layout_margin="3dp"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#C0392B"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/descrHandyStatus"
+            android:text="Status"
+            android:layout_margin="8dp"
+            android:textColor="#fff"
+            android:layout_below="@id/header"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:padding="6dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/borderbtnvalid"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/descrHandyAdd"
+            android:text="Address"
+            android:textColor="#2E4053"
+            android:layout_margin="3dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/descrHandyNames"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/descrHandyPrice"
+            android:text="Price: medium"
+            android:textColor="#fff"
+            android:padding="5dp"
+            android:background="@drawable/borderbtnvalid"
+            android:layout_marginLeft="70dp"
+            android:layout_below="@id/descrHandyAdd"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/descrHandySuccess"
+            android:text="Job success:90%"
+            android:layout_toRightOf="@id/descrHandyPrice"
+            android:layout_below="@id/descrHandyAdd"
+            android:layout_marginLeft="20dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:padding="5dp"
+            android:background="@drawable/borderbtnvalid"
+            android:textColor="#fff"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/descrHandyHire"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="HIRE"
+            android:layout_marginRight="6dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/borderbtnvalid"
+            android:padding="8dp"
+            android:onClick="openHiring"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descrHandyPrice"
+            android:background="@drawable/bordershadow"
+            android:layout_margin="9dp"
+            android:layout_above="@id/descrHandyHire"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/descrHandytit"
+                android:text="Description"
+                android:layout_margin="5dp"
+                android:textSize="18dp"
+                />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/descrHandyContent"
+                    android:text="@string/descriptiontxt"/>
+
+            </ScrollView>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

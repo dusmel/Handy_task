@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dusmel.handy_services.HandymanHome">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarAL"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#D35400"
+        android:title="HandyService"
+        app:popupTheme="@style/Mytheme" >
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/back"
+            android:onClick="handyHomeback"
+            android:background="#D35400"
+            android:scaleType="center"
+            />
+
+        <TextView
+            android:id="@+id/hHometoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="HandyMan Service"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+    </android.support.v7.widget.Toolbar>
+    
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bordershadow"
+        android:id="@+id/relativepfl"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/header"
+            android:background="#F0B27A"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/profle"
+            android:id="@+id/handyHomepfl"
+            android:layout_marginTop="60dp"
+            android:layout_centerHorizontal="true"
+
+            />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/handyHomeNames"
+            android:text="Full name"
+            android:textSize="20dp"
+            android:layout_below="@id/handyHomepfl"
+            android:layout_margin="3dp"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:textColor="#C0392B"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/handyHomeField"
+            android:text="Field"
+            android:layout_margin="8dp"
+            android:textColor="#2E4053"
+            android:layout_below="@id/header"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:padding="6dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/bordershadow1"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/handyHomeJobTit"
+            android:text="Job Title"
+            android:layout_margin="8dp"
+            android:textColor="#2E4053"
+            android:layout_below="@id/header"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+            android:padding="6dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bordershadow1"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/handyHomeAdd"
+            android:text="Address"
+            android:textColor="#2E4053"
+            android:layout_margin="3dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/handyHomeNames"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/handyHomePrice"
+            android:text="Price: medium"
+            android:padding="4dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#2E4053"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bordershadow1"
+            android:layout_below="@id/handyHomeAdd"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"/>
+        
+
+
+
+
+
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/handymanHomeRecyler">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

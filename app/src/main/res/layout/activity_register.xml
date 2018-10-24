@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dusmel.handy_services.Register">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#3498DB"
+        android:title="HandyService"
+        app:popupTheme="@style/Mytheme" >
+
+        <TextView
+            android:id="@+id/regtithead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="HandyMan Service"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="6dp"
+        android:background="#2E4053">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F2F3F4"
+                android:id="@+id/regtxtfn"
+                android:text="Firstname"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/regFname"
+                android:textColor="#F2F3F4"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F2F3F4"
+                android:id="@+id/regtxtln"
+                android:text="Lastname"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F2F3F4"
+                android:id="@+id/regLname"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F2F3F4"
+                android:id="@+id/regtxtage"
+                android:text="Job Field"/>
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/regField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_background_color="#3498DB"
+                app:ms_text_color="#F2F3F4"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F2F3F4"
+                android:id="@+id/regtxtJobTit"
+                android:text="Job Title"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F2F3F4"
+                android:id="@+id/regJobTit"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F2F3F4"
+                android:id="@+id/regtxtPflUrl"
+                android:text="Profile url"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F2F3F4"
+                android:id="@+id/regPflUrl"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F2F3F4"
+                android:id="@+id/regtxtDesc"
+                android:text="Brief description of yourself"/>
+            <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:textColor="#F2F3F4"
+                    android:id="@+id/regDesc"
+                    />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F2F3F4"
+                android:id="@+id/regtxtadd"
+                android:text="Address"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#F2F3F4"
+                android:id="@+id/regAdd"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F2F3F4"
+                android:id="@+id/regtxttel"
+                android:inputType="phone"
+                android:text="Telephone"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/regTel"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F2F3F4"
+                android:id="@+id/regtxtmail"
+                android:text="Email"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/regEmail"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F2F3F4"
+                android:id="@+id/regtxtPrice"
+                android:text="Price"
+                />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/regPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ms_background_color="#3498DB"
+                app:ms_text_color="#F2F3F4"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F2F3F4"
+                android:id="@+id/regtxtpass"
+                android:text="Password"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/regPass"
+                android:inputType="textPassword"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#F2F3F4"
+                android:id="@+id/regtxtconfpass"
+                android:text="Confirm password"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/regConfPass"
+                android:inputType="textPassword"
+                android:textColor="#F2F3F4"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:id="@+id/regSubmit"
+                android:background="@drawable/bordbtn"
+                android:textColor="#F2F3F4"
+                android:layout_gravity="center"/>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

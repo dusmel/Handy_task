@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/cardview_light_background"
+    android:orientation="vertical"
+    tools:context="com.dusmel.handy_services.Hiring">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/bordershadow"
+        android:title="HandyService"
+        app:popupTheme="@style/Mytheme">
+
+        <TextView
+            android:id="@+id/hiringtxttithead"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="HandyMan Service"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:textColor="#D35400"
+            android:textSize="30dp" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8F9F9"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/hiringtxtNames"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full name"
+                android:textColor="#D35400" />
+
+            <EditText
+                android:id="@+id/hiringNames"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#D35400" />
+
+
+
+            <TextView
+                android:id="@+id/hiringtxtTel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telephone"
+                android:textColor="#D35400" />
+
+            <EditText
+                android:id="@+id/hiringTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#D35400" />
+
+            <TextView
+                android:id="@+id/hiringtxtmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#D35400" />
+
+            <EditText
+                android:id="@+id/hiringMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#D35400" />
+
+            <TextView
+                android:id="@+id/hiringtxtadd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="#D35400" />
+
+            <EditText
+                android:id="@+id/hiringAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#D35400" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:background="@drawable/bordershadow"
+                >
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/hiringDescription"
+                        android:hint="@string/description_task"
+                        />
+                    
+                </ScrollView>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/hiringSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/borderbtnvalid"
+                android:text="SEND"
+                android:onClick="hiringSubmit"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

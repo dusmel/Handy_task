@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.dusmel.handy_services.AdminHome">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarAL"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#D35400"
+        android:title="HandyService"
+        app:popupTheme="@style/Mytheme" >
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/back"
+            android:onClick="adminHomeback"
+            android:background="#D35400"
+            android:scaleType="center"
+            />
+
+        <TextView
+            android:id="@+id/AHometoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="HandyMan Service"
+            android:textColor="#fff"
+            android:textSize="30dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/adminHomeRecyler">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

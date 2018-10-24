@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dusmel.handy_services">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/handylogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".welcome"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Splash_screen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HandymanField"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HandymanDesc"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginHandymen"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".AdminLogin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Hiring"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminHome"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AdminDescr"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Register" />
+        <activity
+            android:name=".HandymanHome"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity android:name=".JobDesc"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+    </application>
+
+</manifest>

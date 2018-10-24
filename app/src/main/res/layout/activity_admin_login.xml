@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/whitebg"
+    tools:context="com.dusmel.handy_services.AdminLogin">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarAL"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#D35400"
+        android:title="HandyService"
+        app:popupTheme="@style/Mytheme" >
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/back"
+            android:onClick="adminLoginback"
+            android:background="#D35400"
+            android:scaleType="center"
+            />
+
+        <TextView
+            android:id="@+id/ALtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="HandyMan Service"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/AdminlogTit"
+        android:text="Admin"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:textColor="#424949"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textSize="30dp"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/AdminlogTit"
+        android:layout_marginTop="50dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AdminlogLabelUsern"
+            android:text="Username"
+            android:textColor="#424949"
+            android:layout_marginTop="5dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/AdminlogUsern"
+            android:layout_toRightOf="@id/AdminlogLabelUsern"
+            android:background="@drawable/borderwhite"
+            android:textColor="#212F3D"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AdminlogLabelpass"
+            android:text="Password"
+            android:layout_below="@id/AdminlogLabelUsern"
+            android:textColor="#424949"
+            android:layout_marginTop="30dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/AdminlogPass"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_toRightOf="@id/AdminlogLabelUsern"
+            android:layout_below="@id/AdminlogLabelUsern"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/borderwhite"
+            android:textColor="#212F3D"
+            android:layout_marginLeft="10dp"
+            android:inputType="textPassword"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AdminlogLog"
+            android:textColor="#FDFEFE"
+            android:layout_below="@id/AdminlogPass"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:onClick="callAddBranch"
+            android:background="@drawable/borderbtnvalid"
+            android:text="login"/>
+    </RelativeLayout>
+
+</LinearLayout>

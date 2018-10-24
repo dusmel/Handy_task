@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dusmel.handy_services.AdminDescr">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarAL"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#D35400"
+        android:title="HandyMan Service"
+        app:popupTheme="@style/Mytheme" >
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/back"
+            android:onClick="adminDescrback"
+            android:background="#D35400"
+            android:scaleType="center"
+            />
+
+        <TextView
+            android:id="@+id/Adescrtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="HandyMan Service"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AdmninDescNames"
+            android:text="Full Names"
+            android:textColor="#566573"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AdminDescField"
+            android:text="Field"
+            android:textColor="#566573"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AdminDescAdd"
+            android:text="Address"
+            android:textColor="#566573"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AdminDescDescr"
+            android:text="Description"
+            android:gravity="center"
+            android:textColor="#566573"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AdminDescHandyNames"
+            android:text="Handyman Names"
+            android:textColor="#566573"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminDescTel"
+                android:text="Telephone: 0787038383"
+                android:textColor="#566573"
+                android:layout_marginTop="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminDescmail"
+                android:text="Mail: rosine@gmail.com"
+                android:textColor="#566573"
+                android:layout_below="@id/adminDescTel"
+                android:layout_marginTop="20dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+
+                />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminDescCall"
+                android:src="@drawable/call"
+                android:tint="#922B21"
+                android:layout_toRightOf="@id/adminDescTel"
+                android:layout_marginTop="15dp"
+                android:onClick="adminDescrCall"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/adminDescMail"
+                android:src="@drawable/mail"
+                android:tint="#922B21"
+                android:layout_toRightOf="@id/adminDescmail"
+                android:layout_below="@id/adminDescTel"
+                android:onClick="adminDescrMail"
+                android:layout_marginTop="15dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/AdminDescTime"
+            android:text="Time"
+            android:textColor="#566573"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            />
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hHClientNames"
+                android:layout_margin="4dp"
+                android:text="Full Names"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:padding="3dp"
+                />
+
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hHHiringTime"
+                android:layout_margin="4dp"
+                android:layout_below="@id/hHClientNames"
+                android:text="Timestamp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:padding="5dp"
+                android:background="@drawable/borderbtnvalid"
+                android:textColor="#FFFFFF"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/hHHiringadd"
+                android:layout_margin="4dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/borderbtnvalid"
+                android:layout_below="@id/hHClientNames"
+                android:text="address"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:padding="5dp"
+                android:textColor="#FFFFFF"/>
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

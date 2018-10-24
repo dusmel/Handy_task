@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp">
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recClientNames"
+                android:layout_margin="4dp"
+                android:text="Full Names"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:padding="3dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recClientState"
+                android:layout_margin="4dp"
+                android:layout_alignParentRight="true"
+                android:text="New"
+                android:background="@drawable/borderbtnstate"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:padding="3dp"
+                android:textColor="#fff"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recHiringfield"
+                android:layout_margin="4dp"
+                android:layout_below="@id/recClientNames"
+                android:text="@string/field"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:padding="5dp"
+                android:background="@drawable/borderbtnvalid"
+                android:textColor="#FFFFFF"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recHiringTime"
+                android:layout_margin="4dp"
+                android:layout_below="@id/recClientNames"
+                android:text="Timestamp"
+                android:layout_centerHorizontal="true"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:padding="5dp"
+                android:background="@drawable/borderbtnstate"
+                android:textColor="#FFFFFF"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/recHiringadd"
+                android:layout_margin="4dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/borderbtnvalid"
+                android:layout_below="@id/recClientNames"
+                android:text="address"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:padding="5dp"
+                android:textColor="#FFFFFF"/>
+
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
