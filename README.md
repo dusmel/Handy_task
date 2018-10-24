@@ -6,7 +6,7 @@
 ![](https://img.shields.io/github/release/pandao/editor.md.svg) 
 
 
-This is like a platform for connecting individuals looking for household services with top-quality, pre-screened independent service professionals.This is a demo app for the people who are looking to get their app developed like Handy,Urbanclap...
+This is  a platform for connecting individuals looking for household services with top-quality, pre-screened independent service professionals.This is a demo app for the people who are looking to get their app developed like Handy,Urbanclap...
 
 ### Screenshots
 
